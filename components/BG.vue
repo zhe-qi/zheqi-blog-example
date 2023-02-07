@@ -4,7 +4,9 @@ const { isDark } = useTheme()
 const bg = ref<HTMLElement | null>(null)
 // TODO: Fix this, 刷新样式丢失，所以这样补救
 onMounted(() => {
-  if (isDark.value) { bg.value?.classList.remove('bg') }
+  nextTick(() => {
+    if (isDark.value) { bg.value?.classList.remove('bg') }
+  })
 })
 </script>
 
