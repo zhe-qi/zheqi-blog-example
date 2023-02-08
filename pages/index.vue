@@ -11,10 +11,10 @@
           {{ $t('下一代博客模板') }}
         </div>
         <div class="flex items-center mt-2 space-x-8 text-base font-normal leading-10 text-center text-black dark:text-zinc-200 md:mt-12">
-          <NuxtLink to="/" class="block h-10 overflow-hidden border rounded-md text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 w-28 bg-cyan-400 dark:bg-cyan-700">
+          <NuxtLink to="/home" class="block h-10 overflow-hidden border rounded-md text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 w-28 bg-cyan-400 dark:bg-cyan-700">
             {{ $t('开始使用') }}
           </NuxtLink>
-          <NuxtLink to="/" class="flex items-center justify-center h-10 bg-white border rounded-md border-zinc-400 dark:border-zinc-200 dark:bg-black w-28">
+          <NuxtLink to="https://github.com/zhe-qi/zheqi-blog" class="flex items-center justify-center h-10 overflow-hidden bg-white border rounded-md text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 dark:bg-black w-28">
             <span>{{ $t('了解更多') }}</span> <Icon name="material-symbols:chevron-right" class="text-2xl" />
           </NuxtLink>
         </div>

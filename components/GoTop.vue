@@ -4,10 +4,12 @@ const { y } = useWindowScroll()
 
 const top = ref<string>('-999px')
 
+const doc = ref<string>('')
+
 watch(y, () => {
   if (y.value > 100) {
-    if (top.value !== '-25vh') {
-      top.value = '-25vh'
+    if (top.value !== '-45vh') {
+      top.value = '-45vh'
     }
   } else if (top.value !== '-999px') { top.value = '-999px' }
 })

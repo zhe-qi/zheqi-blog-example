@@ -35,6 +35,10 @@ const handlerReload = () => {
   location.reload()
 }
 
+const toGithub = () => {
+  window.open('https://github.com/zhe-qi')
+}
+
 </script>
 
 <template>
@@ -62,7 +66,7 @@ const handlerReload = () => {
       <div class="w-[2px] h-8 rounded-sm bg-zinc-300" />
       <HeaderIconI18n />
       <HeaderIconSwitch />
-      <Icon name="carbon:logo-github" class="text-3xl cursor-pointer" />
+      <Icon name="carbon:logo-github" class="text-3xl cursor-pointer" @click="toGithub" />
     </div>
   </div>
 </template>
