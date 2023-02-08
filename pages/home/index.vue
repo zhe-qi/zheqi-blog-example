@@ -227,7 +227,7 @@ for (let i = 1, len = 11; i < len; i++) {
                   >
                   <div class="ml-2">
                     title:
-                    <span class="rainbow-text">{{ $t('item.data.title') }}</span>
+                    <span class="rainbow-text">{{ $t(item.data.title) }}</span>
                   </div>
                 </NuxtLink>
               </div>

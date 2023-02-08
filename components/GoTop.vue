@@ -6,10 +6,10 @@ const top = ref<string>('-999px')
 
 watch(y, () => {
   if (y.value > 100) {
-    if (top.value !== '-200px') {
-      top.value = '-200px'
+    if (top.value !== '-25vh') {
+      top.value = '-25vh'
     }
-  } else if (top.value !== '-900px') { top.value = '-999px' }
+  } else if (top.value !== '-999px') { top.value = '-999px' }
 })
 
 const changeTop = () => {
@@ -25,7 +25,7 @@ const changeTop = () => {
 
 <template>
   <div
-    class="transition-all back-to-top cd-top faa-float animated cd-is-visible"
+    class="ml-5 transition-all back-to-top cd-top faa-float animated cd-is-visible"
     @click="changeTop"
   />
 </template>
