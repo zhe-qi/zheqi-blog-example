@@ -55,26 +55,26 @@ useHead({
       <section class="lg:px-[15%] px-[5%] dark:bg-zinc-800 pb-5 pt-10">
         <!-- title1 -->
         <h1
-          class="text-2xl font-semibold leading-normal text-center dark:text-yellow-100 text-zinc-600 lg:text-5xl"
+          class="text-2xl font-semibold leading-normal text-center dark:text-yellow-100 text-zinc-600 lg:text-[4rem]"
         >
-          Stay Up To Date With The
+          {{ $t('保持最新的') }}
         </h1>
         <!-- title2 -->
         <h1
           class="text-4xl font-bold leading-normal text-center lg:text-6xl rainbow-text"
         >
-          Latest prevalent Trends
+          {{ $t('流行趋势') }}
         </h1>
         <!-- body -->
         <div class="mt-10 lg:mt-20">
           <h1 class="mb-5 font-medium dark:text-green-50 lg:text-lg">
-            Filter Category
+            {{ $t('过滤分类') }}:
             <button
               v-show="activeCategory"
               class="hover:bg-primary-100 hover:text-primary dark:bg-slate-800 dark:text-yellow-100 px-3 rounded text-[13px] capitalize bg-gray-200 ml-5"
               @click="setCategory(null)"
             >
-              Clear &times;
+              {{ $t('清除') }} &times;
             </button>
           </h1>
           <!-- tabs -->
@@ -106,7 +106,7 @@ useHead({
                 >
                 <div class="p-3 dark:text-white">
                   <h2 class="text-xl">
-                    {{ p.title }}
+                    {{ $t((p.title as string).trim()) }}
                   </h2>
                   <p class="mt-2 text-sm font-bold">
                     {{ formatData(p.time) }}

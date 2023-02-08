@@ -13,18 +13,9 @@ const showFilter = () => {
 // https://img.xjh.me/random_img.php
 // https://api.ghser.com/random/api.php
 
-const rdmImg = [
-  'https://tva1.sinaimg.cn/large/0072Vf1pgy1foxkj2ashuj31kw0w0hcp.jpg',
-  'https://tva1.sinaimg.cn/large/9bd9b167gy1g4li9pcge2j21hc0xcb29.jpg',
-  'https://tva3.sinaimg.cn/large/0072Vf1pgy1foxkihz4b4j31hc0u0wux.jpg',
-  'https://tva1.sinaimg.cn/large/006gkh44ly1fw72u8rmohj31hc0u0tyb.jpg',
-  'https://tva3.sinaimg.cn/large/0072Vf1pgy1foxk3gtfinj31hc0u0k6t.jpg',
-  'https://tva2.sinaimg.cn/large/0072Vf1pgy1foxkfob8yfj31hc0u0ts9.jpg',
-  'https://tva1.sinaimg.cn/large/0076R7yAgy1fq8ds6c448j31hc0u016f.jpg',
-  'https://tva1.sinaimg.cn/large/006gkh44ly1fw6sscydcwj31hc0u0h4r.jpg',
-  'https://tva1.sinaimg.cn/large/9bd9b167ly1g2qmjashi6j21hc0u0u0x.jpg',
-  'https://tva1.sinaimg.cn/large/0072Vf1pgy1fodqpadh6zj31kw14nnpe.jpg'
-]
+const rdmImg = Array.from({ length: 11 }, (_, i) => {
+  return `/images/${i + 1}.jpg`
+})
 
 interface ArticleData {
   _path: string
@@ -88,21 +79,21 @@ const utils: Util[] = [
   {
     id: '1',
     url: 'https://vuetelescope.com/',
-    img: 'https://tva3.sinaimg.cn/large/0072Vf1pgy1fodqo0e8fzj31hc0xcqv5.jpg',
+    img: '/images/12.jpg',
     title: 'Vuetelescope',
     text: '这是一个可以查看你vue技术栈的浏览器插件'
   },
   {
     id: '2',
     url: 'https://picsum.photos/',
-    img: 'https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnf6ksdj31kw0w0dzb.jpg',
+    img: '/images/2.jpg',
     title: 'Picsum',
     text: '这是一个随机图片API生成工具'
   },
   {
     id: '3',
     url: 'https://tail-animista.vercel.app/play/basic/scale-up/scale-up-center',
-    img: 'https://api.ixiaowai.cn/api/api.php',
+    img: '/images/1.jpg',
     title: 'Tailanimista',
     text: '这是一个Tailwindcss的动画生成工具'
   }
@@ -112,44 +103,15 @@ interface Imgs {
   url: string
   title: string
 }
-const imgs: Imgs[] = [
-  {
-    url: 'https://api.qicaiyun.top/ercy/api.php',
-    title: '第一张'
-  },
-  {
-    // https://api.ghser.com/random/pc.php
-    url: 'https://tva1.sinaimg.cn/large/0072Vf1pgy1foxk44i0ekj31hc0u0drp.jpg',
-    title: '第二张'
-  },
-  {
-    // http://api.btstu.cn/sjbz/?lx=dongman
-    url: 'https://tva1.sinaimg.cn/large/006gkh44ly1fw6an6hc47j31hc0u0nlb.jpg',
-    title: '第三张'
-  },
-  {
-    url: 'https://tva4.sinaimg.cn/large/0072Vf1pgy1foxk70rdinj31kw0w0b19.jpg',
-    title: '第四张'
-  },
-  {
-    // https://api.ixiaowai.cn/api/api.php
-    // https://api.btstu.cn/sjbz/?lx=suiji
-    url: 'https://tva3.sinaimg.cn/large/0072Vf1pgy1foxkj74bl3j31hc0u0ng2.jpg',
-    title: '第五张'
-  },
-  {
-    url: 'https://img.paulzzh.com/touhou/random',
-    title: '第六张'
-  },
-  {
-    url: 'https://img.xjh.me/random_img.php?return=302',
-    title: '第七张'
-  },
-  {
-    url: 'https://www.dmoe.cc/random.php',
-    title: '第八张'
-  }
-]
+const imgs: Imgs[] = []
+
+for (let i = 1, len = 11; i < len; i++) {
+  imgs.push({
+    url: `/images/${i}.jpg`,
+    title: `图片${i}`
+  })
+}
+
 </script>
 
 <template>

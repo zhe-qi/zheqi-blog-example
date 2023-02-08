@@ -34,5 +34,18 @@ export const en = {
   不连续: 'Discontinuous',
   天: 'Day',
   查看更多: 'View More',
-  年龄: 'Age'
+  年龄: 'Age',
+  保持最新的: 'Keep up to date',
+  流行趋势: 'Trends',
+  过滤分类: 'Filter Category',
+  清除: 'Clear',
+  后台管理系统: 'Backstage Management System',
+  初始化项目模板: 'Initialize Project Template',
+  简易网易云: 'Simple NetEase Cloud Music',
+  nuxt3博客项目: 'Nuxt3 Blog Project',
+  简易脚手架: 'Simple Scaffold',
+  'eslint配置-npm': 'eslint configuration-npm',
+  '音乐播放器-桌面版': 'Music Player-desktop version',
+  埋点sdk: 'Buried point sdk',
+  '内容仅供参考，网站仅供学习': 'Content for reference only, the site is for learning only'
 }
