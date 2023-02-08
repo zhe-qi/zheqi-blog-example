@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    dir: 'public/images'
+    provider: 'netlify'
   },
   app: {
     head: {

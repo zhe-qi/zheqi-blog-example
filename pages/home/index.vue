@@ -120,28 +120,42 @@ for (let i = 1, len = 11; i < len; i++) {
       <!-- 头上三个大板块 -->
       <div class="grid w-full grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 lg:gap-4 lg:h-64">
         <div class="grid grid-cols-2 grid-rows-2 gap-4 mb-5 overflow-hidden rounded dark:contrast-50 md:mb-0">
-          <div v-for="(item, index) in rdmImg.slice(2, 6)" :key="index"
-            class="overflow-hidden rounded cursor-pointer w-50 h-30 ">
-            <nuxt-img class="object-cover w-full h-full transition-all border hover:scale-150" :src="item"
-              alt="zheqi-blog" />
+          <div
+            v-for="(item, index) in rdmImg.slice(2, 6)"
+            :key="index"
+            class="overflow-hidden rounded cursor-pointer w-50 h-30 "
+          >
+            <nuxt-img
+              loading="lazy"
+              class="object-cover w-full h-full transition-all border hover:scale-150"
+              :src="item"
+              alt="zheqi-blog"
+            />
           </div>
         </div>
         <div class="w-full overflow-hidden rounded lg:h-full h-52">
-          <Swiper class="w-full h-full cursor-col-resize" :modules="[SwiperAutoplay, SwiperEffectCreative]"
-            :slides-per-view="1" :loop="true" :effect="'creative'" :autoplay="{
+          <Swiper
+            class="w-full h-full cursor-col-resize"
+            :modules="[SwiperAutoplay, SwiperEffectCreative]"
+            :slides-per-view="1"
+            :loop="true"
+            :effect="'creative'"
+            :autoplay="{
               delay: 5000,
               disableOnInteraction: true,
-            }" :creative-effect="{
-  prev: {
-    shadow: false,
-    translate: ['-20%', 0, -1],
-  },
-  next: {
-    translate: ['100%', 0, 0],
-  },
-}">
+            }"
+            :creative-effect="{
+              prev: {
+                shadow: false,
+                translate: ['-20%', 0, -1],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }"
+          >
             <SwiperSlide v-for="slide in imgs" :key="slide.title">
-              <nuxt-img :src="slide.url" alt="slide.title" class="object-cover w-full h-full dark:brightness-75" />
+              <nuxt-img loading="lazy" :src="slide.url" alt="slide.title" class="object-cover w-full h-full dark:brightness-75" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -178,9 +192,13 @@ for (let i = 1, len = 11; i < len; i++) {
             <!-- 虚拟列表 -->
             <div class="w-full dark:text-green-50 h-[calc(100%-2.65rem)]" v-bind="(containerProps as any)">
               <div v-bind="wrapperProps">
-                <NuxtLink v-for="item in list" :key="'Nav' + item.index + item.data.title"
-                  class="flex h-20 p-2 m-2 border" :to="'/blog' + item.data._path">
-                  <nuxt-img class="object-cover h-full w-28" :src="item.data.img" alt="" />
+                <NuxtLink
+                  v-for="item in list"
+                  :key="'Nav' + item.index + item.data.title"
+                  class="flex h-20 p-2 m-2 border"
+                  :to="'/blog' + item.data._path"
+                >
+                  <nuxt-img loading="lazy" class="object-cover h-full w-28" :src="item.data.img" alt="" />
                   <div class="ml-2">
                     title:
                     <span class="rainbow-text">{{ $t(item.data.title) }}</span>
@@ -192,7 +210,8 @@ for (let i = 1, len = 11; i < len; i++) {
           <aside class="w-[28%] lg:block hidden">
             <!-- 公告 -->
             <div
-              class="w-full p-2 mb-2 overflow-x-hidden overflow-y-scroll prose border rounded dark:text-yellow-50 lg:prose-xs h-75">
+              class="w-full p-2 mb-2 overflow-x-hidden overflow-y-scroll prose border rounded dark:text-yellow-50 lg:prose-xs h-75"
+            >
               <h1 class="text-xl font-bold text-center dark:text-yellow-50 rainbow-text">
                 {{ $t('关于本站') }}
               </h1>
@@ -209,7 +228,7 @@ for (let i = 1, len = 11; i < len; i++) {
               <ul class="w-full h-full">
                 <li v-for="item in utils" :key="item.id" class="w-full h-32 p-2 border rounded">
                   <NuxtLink class="flex w-full h-full overflow-hidden" target="_blank" :to="item.url">
-                    <nuxt-img class="w-40 bg-center bg-cover h-30" :src="item.img" alt="" />
+                    <nuxt-img loading="lazy" class="w-40 bg-center bg-cover h-30" :src="item.img" alt="" />
                     <div class="prose w-[60%] ml-2">
                       <h4 class="text-center dark:text-red-50">
                         {{ item.title }}
