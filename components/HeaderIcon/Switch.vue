@@ -9,11 +9,11 @@ onMounted(() => {
   nextTick(() => {
     if (icon1.value?.style?.display) {
       if (isDark.value) {
-    icon1.value!.style.display = 'block'
-    icon2.value!.style.display = 'none'
+      icon1.value!.style.display = 'block'
+      icon2.value!.style.display = 'none'
       } else {
-    icon1.value!.style.display = 'none'
-    icon2.value!.style.display = 'block'
+      icon1.value!.style.display = 'none'
+      icon2.value!.style.display = 'block'
       }
     }
   })

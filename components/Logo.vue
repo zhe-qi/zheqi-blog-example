@@ -11,6 +11,6 @@
 
 <style scoped lang="postcss">
 .bg-light {
-  @apply h-0 w-0 shadow-cyan-500/50 shadow-[0px_0px_10vw_10vw] rounded-full;
+  @apply h-0 w-0 shadow-cyan-500/50 shadow-[0px_0px_8vw_8vw] rounded-full;
 }
 </style>

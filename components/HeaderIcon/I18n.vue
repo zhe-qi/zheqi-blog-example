@@ -17,7 +17,7 @@ const switchLocalePath = (code: string, name: string) => {
 </script>
 
 <template>
-  <Menu as="div" class="relative inline-block text-left h-[29px] w-24">
+  <Menu as="div" class="relative inline-block text-left">
     <div>
       <MenuButton class="flex items-center justify-center space-x-2">
         <Icon name="uil:english-to-chinese" class="text-xl" />

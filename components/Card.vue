@@ -6,7 +6,7 @@
   <article
     class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:shadow-sm"
   >
-    <div class="rounded-[10px] bg-white dark:bg-zinc-900 p-4 !pt-20 sm:p-6">
+    <div class="rounded-[10px] bg-white dark:bg-black p-4 !pt-20 sm:p-6">
       <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-zinc-200">
         {{ $t('10th Oct 2022') }}
       </time>

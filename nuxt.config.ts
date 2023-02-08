@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxtjs/i18n',
     'nuxt-headlessui',
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-swiper'
     // https://github.com/nuxt/nuxt/issues/15500 在windows上似乎有问题，暂时不用，mac可以尝试打开
     // '@nuxtjs/robots'
   ],
@@ -33,6 +34,12 @@ export default defineNuxtConfig({
       ]
     }
   },
+  // plugins: [
+  //   {
+  //     src: '~/plugins/swiper.ts',
+  //     ssr: false
+  //   }
+  // ],
   // vueuse: {
   //   ssrHandlers: true
   // },
@@ -45,6 +52,17 @@ export default defineNuxtConfig({
         en,
         zh
       }
+    }
+  },
+  content: {
+    markdown: {
+      toc: {
+        depth: 3,
+        searchDepth: 3
+      }
+    },
+    highlight: {
+      theme: 'dracula-soft'
     }
   },
   headlessui: {
