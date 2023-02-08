@@ -16,7 +16,7 @@ useHead({
 <template>
   <!-- 文章主体 -->
   <article
-    class="dark:text-white dark:bg-zinc-800 pt-10 max-w-max overflow-x-hidden lg:pt-20 flex items-start lg:space-x-10 px-[5%] lg:px-[10%]"
+    class="dark:text-zinc-300 dark:bg-zinc-800 pt-10 max-w-max overflow-x-hidden lg:pt-20 flex items-start lg:space-x-10 px-[5%] lg:px-[10%]"
   >
     <div class="w-[370px] hidden lg:block">
       <div
@@ -44,7 +44,7 @@ useHead({
     <ClientOnly>
       <!-- 渲染文章内容 -->
       <ContentRenderer
-        class="w-screen prose-sm prose dark:text-zinc-300 lg:prose-base prose-slate pr-7 blog-link lg:max-w-none"
+        class="w-screen prose-sm prose dark:text-zinc-300 lg:prose-base prose-slate px-7 blog-link lg:max-w-none"
         :value="blog!"
       >
         <template #empty>
