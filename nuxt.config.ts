@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-headlessui',
     '@nuxt/content',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    '@nuxt/image-edge'
     // https://github.com/nuxt/nuxt/issues/15500 在windows上似乎有问题，暂时不用，mac可以尝试打开
     // '@nuxtjs/robots'
   ],

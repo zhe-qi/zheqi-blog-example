@@ -54,40 +54,32 @@ useHead({
     <main class="pt-16">
       <section class="lg:px-[15%] px-[5%] dark:bg-zinc-800 pb-5 pt-10">
         <!-- title1 -->
-        <h1
-          class="text-2xl font-semibold leading-normal text-center dark:text-yellow-100 text-zinc-600 lg:text-[4rem]"
-        >
+        <h1 class="text-2xl font-semibold leading-normal text-center dark:text-yellow-100 text-zinc-600 lg:text-[4rem]">
           {{ $t('保持最新的') }}
         </h1>
         <!-- title2 -->
-        <h1
-          class="text-4xl font-bold leading-normal text-center lg:text-6xl rainbow-text"
-        >
+        <h1 class="text-4xl font-bold leading-normal text-center lg:text-6xl rainbow-text">
           {{ $t('流行趋势') }}
         </h1>
         <!-- body -->
         <div class="mt-10 lg:mt-20">
           <h1 class="mb-5 font-medium dark:text-green-50 lg:text-lg">
             {{ $t('过滤分类') }}:
-            <button
-              v-show="activeCategory"
+            <button v-show="activeCategory"
               class="hover:bg-primary-100 hover:text-primary dark:bg-slate-800 dark:text-yellow-100 px-3 rounded text-[13px] capitalize bg-gray-200 ml-5"
-              @click="setCategory(null)"
-            >
+              @click="setCategory(null)">
               {{ $t('清除') }} &times;
             </button>
           </h1>
           <!-- tabs -->
           <div class="flex flex-wrap items-center mb-5 lg:space-x-5">
             <template v-for="(c, i) in categories" :key="`categroy-${i}`">
-              <button
-                :class="{
-                  'bg-primary-100 text-primary': c == activeCategory,
-                  ' bg-zinc-200': c !== activeCategory
-                }"
+              <button :class="{
+                'bg-primary-100 text-primary': c == activeCategory,
+                ' bg-zinc-200': c !== activeCategory
+              }"
                 class="hover:bg-primary-100 hover:text-primary dark:bg-slate-800 dark:text-yellow-100 px-3 py-2 rounded text-[13px] capitalize shrink-0 mr-4 mb-4 lg:mr-0 lg:mb-0"
-                @click="setCategory(c)"
-              >
+                @click="setCategory(c)">
                 {{ c }}
               </button>
             </template>
@@ -95,15 +87,10 @@ useHead({
           <!-- projects -->
           <div class="grid grid-cols-1 gap-10 lg:grid-cols-4 lg:mt-20">
             <template v-for="(p, i) in filteritems" :key="`ele-${i}-${p.id}`">
-              <NuxtLink
-                :to="`/project/${p.id}`"
-                class="transition-all border rounded-md animate-shadow-drop-center hover:bg-zinc-200 hover:cursor-pointer"
-              >
-                <img
-                  :src="p.image"
-                  :alt="p.title"
-                  class="dark:brightness-50 w-full h-[300px] object-contain object-center rounded-lg"
-                >
+              <NuxtLink :to="`/project/${p.id}`"
+                class="transition-all border rounded-md animate-shadow-drop-center hover:bg-zinc-200 hover:cursor-pointer">
+                <nuxt-img :src="p.image" :alt="p.title"
+                  class="dark:brightness-50 w-full h-[300px] object-contain object-center rounded-lg" />
                 <div class="p-3 dark:text-white">
                   <h2 class="text-xl">
                     {{ $t((p.title as string).trim()) }}
@@ -122,4 +109,6 @@ useHead({
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>

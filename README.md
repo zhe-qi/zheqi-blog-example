@@ -22,3 +22,5 @@ npm run dev
 后续考虑：strapi，富文本编辑，todolist页面，评论页面  
 
 bug1: 切换到暗色主题刷新页面变成亮色背景和按钮
+
+node-sass sharp cypress这几个老六我服了

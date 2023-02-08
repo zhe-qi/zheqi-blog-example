@@ -35,7 +35,7 @@ defineProps<{
       class="block text-center w-[25%]"
       href="https://github.com/zhe-qi"
     >
-      <img :src="user.avatar_url" alt="zhe-qi" class="w-20 rounded-full">
+      <nuxt-img :src="user.avatar_url" alt="zhe-qi" class="w-20 rounded-full" />
       <p class="dark:text-white">
         {{ user.name }}
       </p>

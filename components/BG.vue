@@ -1,24 +1,11 @@
 <script setup lang="ts">
 const { isDark } = useTheme()
 
-const bg = ref<HTMLElement | null>(null)
-// TODO: Fix this, 刷新样式丢失，所以这样补救
-onMounted(() => {
-  nextTick(() => {
-    if (isDark.value) { bg.value?.classList.remove('bg') }
-  })
-})
 </script>
 
 <template>
-  <div ref="bg" :class="isDark ? '' : 'bg' " />
+  <nuxt-img v-show="!isDark" src="/images/tailwind.jpg" class="fixed h-screen w-screen top-0 left-0 z-[-99] bg-cover bg-center" />
 </template>
 
 <style scoped lang="postcss">
-.bg {
-  @apply fixed h-screen w-screen top-0 left-0 z-[-99];
-  background-image: url('/images/tailwind.jpg');
-  background-size: cover;
-  background-position: center;
-}
 </style>
