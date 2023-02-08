@@ -4,14 +4,14 @@ import { en, zh } from './locales'
 export default defineNuxtConfig({
   // ssr: true,
   modules: [
+    '@nuxt/image-edge',
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'nuxt-icon',
     '@nuxtjs/i18n',
     'nuxt-headlessui',
     '@nuxt/content',
-    'nuxt-swiper',
-    '@nuxt/image-edge'
+    'nuxt-swiper'
     // https://github.com/nuxt/nuxt/issues/15500 在windows上似乎有问题，暂时不用，mac可以尝试打开
     // '@nuxtjs/robots'
   ],
@@ -21,6 +21,9 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
+  },
+  image: {
+    dir: 'public/images'
   },
   app: {
     head: {
