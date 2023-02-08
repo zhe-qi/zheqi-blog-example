@@ -24,3 +24,4 @@ npm run dev
 bug1: 切换到暗色主题刷新页面变成亮色背景和按钮
 
 node-sass sharp cypress这几个老六我服了
+

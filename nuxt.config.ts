@@ -23,7 +23,16 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'netlify'
+    provider: 'netlify',
+    presets: {
+      image: {
+        modifiers: {
+          format: 'jpg',
+          width: 120,
+          height: 65
+        }
+      }
+    }
   },
   app: {
     head: {

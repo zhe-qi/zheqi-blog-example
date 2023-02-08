@@ -44,7 +44,7 @@ useHead({
     <ClientOnly>
       <!-- 渲染文章内容 -->
       <ContentRenderer
-        class="w-screen prose-sm prose lg:prose-base prose-slate pr-7 blog-link lg:max-w-none"
+        class="w-screen prose-sm prose dark:text-zinc-300 lg:prose-base prose-slate pr-7 blog-link lg:max-w-none"
         :value="blog!"
       >
         <template #empty>
