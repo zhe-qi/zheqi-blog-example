@@ -51,7 +51,7 @@ useHead({
 
 <template>
   <div>
-    <main class="pt-16">
+    <main>
       <section class="lg:px-[15%] px-[5%] dark:bg-zinc-800 pb-5 pt-10">
         <!-- title1 -->
         <h1 class="text-2xl font-semibold leading-normal text-center dark:text-yellow-100 text-zinc-600 lg:text-[4rem]">
@@ -93,7 +93,7 @@ useHead({
             <template v-for="(p, i) in filteritems" :key="`ele-${i}-${p.id}`">
               <NuxtLink
                 :to="`/project/${p.id}`"
-                class="transition-all border rounded-md animate-shadow-drop-center hover:bg-zinc-200 hover:cursor-pointer"
+                class="transition-all border rounded-md animate-shadow-drop-center dark:hover:text-zinc-900 hover:bg-zinc-400 hover:cursor-pointer"
               >
                 <nuxt-img
                   preset="image"
@@ -102,7 +102,7 @@ useHead({
                   :alt="p.title"
                   class="dark:brightness-50 w-full h-[300px] object-contain object-center rounded-lg"
                 />
-                <div class="p-3 dark:text-white">
+                <div class="p-3">
                   <h2 class="text-xl">
                     {{ $t((p.title as string).trim()) }}
                   </h2>
