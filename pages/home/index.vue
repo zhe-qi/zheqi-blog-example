@@ -14,7 +14,7 @@ const showFilter = () => {
 // https://api.ghser.com/random/api.php
 
 const rdmImg = Array.from({ length: 10 }, (_, i) => {
-  return `/images/${i + 2}.jpg`
+  return `/images/${i + 2}.webp`
 })
 
 interface ArticleData {
@@ -79,21 +79,21 @@ const utils: Util[] = [
   {
     id: '1',
     url: 'https://vuetelescope.com/',
-    img: '/images/12.jpg',
+    img: '/images/12.webp',
     title: 'Vuetelescope',
     text: '这是一个可以查看你vue技术栈的浏览器插件'
   },
   {
     id: '2',
     url: 'https://picsum.photos/',
-    img: '/images/2.jpg',
+    img: '/images/2.webp',
     title: 'Picsum',
     text: '这是一个随机图片API生成工具'
   },
   {
     id: '3',
     url: 'https://tail-animista.vercel.app/play/basic/scale-up/scale-up-center',
-    img: '/images/1.jpg',
+    img: '/images/1.webp',
     title: 'Tailanimista',
     text: '这是一个Tailwindcss的动画生成工具'
   }
@@ -107,7 +107,7 @@ const imgs: Imgs[] = []
 
 for (let i = 2, len = 12; i < len; i++) {
   imgs.push({
-    url: `/images/${i}.jpg`,
+    url: `/images/${i}.webp`,
     title: `图片${i}`
   })
 }
@@ -134,7 +134,7 @@ for (let i = 2, len = 12; i < len; i++) {
             />
           </div>
         </div>
-        <div class="w-full overflow-hidden rounded lg:h-full h-52">
+        <div class="w-full mt-4 overflow-hidden rounded lg:h-full lg:mt-0 h-52">
           <Swiper
             class="w-full h-full cursor-col-resize"
             :modules="[SwiperAutoplay, SwiperEffectCreative]"

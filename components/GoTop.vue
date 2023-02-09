@@ -6,8 +6,8 @@ const top = ref<string>('-999px')
 
 watch(y, () => {
   if (y.value > 100) {
-    if (top.value !== '-45vh') {
-      top.value = '-45vh'
+    if (top.value !== '-20vmax') {
+      top.value = '-20vmax'
     }
   } else if (top.value !== '-999px') { top.value = '-999px' }
 })

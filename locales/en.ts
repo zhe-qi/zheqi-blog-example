@@ -47,5 +47,7 @@ export const en = {
   'eslint配置-npm': 'eslint configuration-npm',
   '音乐播放器-桌面版': 'Music Player-desktop version',
   埋点sdk: 'Buried point sdk',
-  '内容仅供参考，网站仅供学习': 'Content for reference only, the site is for learning only'
+  '内容仅供参考，网站仅供学习': 'Content for reference only, the site is for learning only',
+  友情链接: 'Friendly Links',
+  收录一些有用的网站: 'Record some useful websites'
 }

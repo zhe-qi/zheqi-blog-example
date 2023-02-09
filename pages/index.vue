@@ -3,19 +3,32 @@
 </script>
 
 <template>
-  <div class="w-full h-full">
-    <section class="box-border overflow-hidden flex text-zinc-700 dark:text-zinc-200 items-center justify-between w-full md:h-[30rem] h-[10rem] px-[10%] md:px-[15%]">
-      <div class="text-xl font-bold md:text-[5rem] md:pt-10 pt-2  md:h-48 h-24 md:w-[28rem] w-36 rainbow-text">
-        {{ $t('zheqi-blog') }}
-        <div class="box-border mt-2 ml-5 text-base md:mt-16 md:ml-24 md:text-4xl">
+  <div class="box-border w-full h-full px-[10%]">
+    <section
+      class="flex box-border text-zinc-700 dark:text-zinc-200 items-center justify-between w-full md:my-20 md:px-[15%] px-[12vw] h-[30vh]"
+    >
+      <div class="md:w-[30vw] md:h-[30vh] w-[60vw] box-border h-[20vh] rainbow-text">
+        <div class="text-3xl md:mt-10 w-full leading-[4rem] h-16 font-bold md:text-[4rem] text-ellipsis whitespace-nowrap overflow-hidden">
+          {{ $t('zheqi-blog') }}
+        </div>
+        <div class="w-full h-10 mt-2 text-xl font-semibold leading-10 md:mt-5 md:ml-[2em] ml-4 md:text-2xl whitespace-nowrap text-ellipsis overflow-hidden">
           {{ $t('下一代博客模板') }}
         </div>
-        <div class="flex items-center mt-2 space-x-8 text-base font-normal leading-10 text-center text-black dark:text-zinc-200 md:mt-12">
-          <NuxtLink to="/home" class="block h-10 overflow-hidden border rounded-md text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 w-28 bg-cyan-400 dark:bg-cyan-700">
+        <div
+          class="flex items-center space-x-8 text-base font-normal leading-7 text-center text-black md:leading-10 mt-7 dark:text-zinc-200 md:mt-12"
+        >
+          <NuxtLink
+            to="/home"
+            class="block w-16 overflow-hidden border rounded-md dark:hover:bg-cyan-500 md:h-10 h-7 hover:bg-cyan-500 text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 md:w-28 bg-cyan-400 dark:bg-cyan-700"
+          >
             {{ $t('开始使用') }}
           </NuxtLink>
-          <NuxtLink to="https://github.com/zhe-qi/zheqi-blog" class="flex items-center justify-center h-10 overflow-hidden bg-white border rounded-md text-ellipsis whitespace-nowrap border-zinc-400 dark:border-zinc-200 dark:bg-black w-28">
-            <span>{{ $t('了解更多') }}</span> <Icon name="material-symbols:chevron-right" class="text-2xl" />
+          <NuxtLink
+            to="https://github.com/zhe-qi/zheqi-blog"
+            class="block w-16 overflow-hidden bg-white border rounded-md dark:hover:bg-zinc-800 md:h-10 h-7 hover:bg-zinc-100 text-ellipsis whitespace-nowrap border-zinc-400 md:w-28 dark:border-zinc-200 dark:bg-black"
+          >
+            {{ $t('了解更多') }}
+            <Icon name="material-symbols:chevron-right" class="mb-1 text-2xl" />
           </NuxtLink>
         </div>
       </div>
@@ -30,6 +43,7 @@
         </div>
       </div>
     </section>
+    <QuickLinks />
   </div>
 </template>
 

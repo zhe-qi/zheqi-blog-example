@@ -4,7 +4,8 @@ const { locale } = useI18n()
 useHead({
   title: 'zheqi-blog',
   htmlAttrs: {
-    lang: computed(() => locale.value)
+    // 设置语言
+    lang: locale.value
   },
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,7 +23,7 @@ useHead({
 <template>
   <Body class="antialiased transition-colors duration-300 dark:text-gray-200 dark:bg-neutral-900">
     <NuxtLayout>
-      <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
+      <NuxtLoadingIndicator :height="2" :duration="3000" :throttle="400" />
       <NuxtPage />
     </NuxtLayout>
   </Body>
