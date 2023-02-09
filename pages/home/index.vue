@@ -228,7 +228,7 @@ for (let i = 2, len = 12; i < len; i++) {
               </h1>
               <ul class="w-full h-full">
                 <li v-for="item in utils" :key="item.id" class="w-full h-32 p-2 border rounded">
-                  <NuxtLink class="flex w-full h-full overflow-hidden" target="_blank" :to="item.url">
+                  <NuxtLink class="flex w-full h-full overflow-auto" target="_blank" :to="item.url">
                     <nuxt-img preset="image" loading="lazy" class="w-40 bg-center bg-cover h-30" :src="item.img" alt="" />
                     <div class="prose w-[60%] ml-2">
                       <h4 class="text-center dark:text-red-50">

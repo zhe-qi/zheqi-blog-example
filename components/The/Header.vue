@@ -74,7 +74,7 @@ onClickOutside(target, () => {
 <template>
   <div class="fixed z-20 w-screen h-16 px-3 border-b md:pr-10 border-slate-200 backdrop-blur-md">
     <div class="flex items-center w-full h-full">
-      <div v-show="isMobile" class="flex items-center justify-between w-full">
+      <div v-if="isMobile" class="flex items-center justify-between w-full">
         <div ref="target" class="relative flex items-center space-x-4">
           <Icon name="material-symbols:menu" class="text-2xl" @click="isOpen = !isOpen" />
           <ul v-if="isOpen" class="absolute top-[100%] right-0 w-20 space-y-2 rounded dark:bg-zinc-900 bg-cyan-50" @focusout="isOpen = false">
@@ -94,7 +94,7 @@ onClickOutside(target, () => {
           <Icon name="carbon:logo-github" class="text-3xl cursor-pointer" @click="toGithub" />
         </div>
       </div>
-      <div v-show="!isMobile" class="flex items-center justify-between w-full">
+      <div v-else class="flex items-center justify-between w-full">
         <div class="flex items-center justify-center space-x-1 text-3xl md:space-x-4">
           <div class="hidden cursor-pointer md:block" @click="toggle">
             <Icon v-if="isFullscreen" name="material-symbols:fullscreen-exit" />
