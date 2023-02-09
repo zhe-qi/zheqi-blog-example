@@ -48,7 +48,7 @@
       "image": "/images/4.jpg",
       "rating": { "rate": 0, "star": 0 },
       "github": "https://github.com/zhe-qi/zheqi-cli",
-      "time": "2022-06-01"
+      "time": "2022-04-01"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "image": "/images/9.jpg",
       "rating": { "rate": 0, "star": 0 },
       "github": "https://github.com/zhe-qi/eslint-config",
-      "time": "2022-07-03"
+      "time": "2022-05-03"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "image": "/images/10.jpg",
       "rating": { "rate": 0, "star": 0 },
       "github": "https://github.com/zhe-qi/netease-cloud-app",
-      "time": "2022-07-04"
+      "time": "2022-06-04"
     },
     {
       "id": 8,
@@ -78,7 +78,57 @@
       "image": "/images/12.jpg",
       "rating": { "rate": 0, "star": 2 },
       "github": "https://github.com/zhe-qi/tracker",
-      "time": "2022-06-20"
+      "time": "2022-07-20"
+    },
+    {
+      "id": 9,
+      "title": "在线挂号微信小程序-uniapp",
+      "description": " 这是一个在线挂号的微信小程序，使用了uniapp框架，基于vue3、ts等技术",
+      "category": "medium project",
+      "image": "/images/1.jpg",
+      "rating": { "rate": 0, "star": 0 },
+      "github": "https://github.com/zhe-qi/uniapp-project",
+      "time": "2022-10-20"
+    },
+    {
+      "id": 10,
+      "title": "在线答题题库系统后端Nestjs+Prisma",
+      "description": "这是一个在线答题题库系统后端，使用了Nestjs+Prisma框架，基于ts等技术",
+      "category": "small project",
+      "image": "/images/5.jpg",
+      "rating": { "rate": 0, "star": 0 },
+      "github": "https://github.com/zhe-qi/back-end",
+      "time": "2022-11-20"
+    },
+    {
+      "id": 11,
+      "title": "在线答题题库系统前端",
+      "description": "这是一个在线答题题库系统前端，基于vue3、ts等技术",
+      "category": "small project",
+      "image": "/images/7.jpg",
+      "rating": { "rate": 0, "star": 0 },
+      "github": "https://github.com/zhe-qi/front-end",
+      "time": "2022-11-20"
+    },
+    {
+      "id": 12,
+      "title": "在线答题题库系统ppt Slidev",
+      "description": "这是一个在线答题题库系统ppt，使用了Slidev框架",
+      "category": "small project",
+      "image": "/images/8.jpg",
+      "rating": { "rate": 0, "star": 0 },
+      "github": "https://github.com/zhe-qi/defense-ppt",
+      "time": "2022-11-20"
+    },
+    {
+      "id": 13,
+      "title": "新版博客nuxt3，后续考虑qwik",
+      "description": "这是一个新版博客，使用了nuxt3框架，基于vue3、ts等技术",
+      "category": "small project",
+      "image": "/images/6.jpg",
+      "rating": { "rate": 0, "star": 0 },
+      "github": "https://github.com/zhe-qi/zheqi-blog",
+      "time": "2023-2-6"
     }
   ]
 }

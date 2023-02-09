@@ -49,5 +49,10 @@ export const en = {
   埋点sdk: 'Buried point sdk',
   '内容仅供参考，网站仅供学习': 'Content for reference only, the site is for learning only',
   友情链接: 'Friendly Links',
-  收录一些有用的网站: 'Record some useful websites'
+  收录一些有用的网站: 'Record some useful websites',
+  '在线挂号微信小程序-uniapp': 'Online registration WeChat mini program-uniapp',
+  '在线答题题库系统后端Nestjs+Prisma': 'Online answer bank system backend Nestjs+Prisma',
+  在线答题题库系统前端: 'Online answer bank system front end',
+  '在线答题题库系统ppt Slidev': 'Online answer bank system ppt Slidev',
+  '新版博客nuxt3，后续考虑qwik': 'New blog nuxt3, subsequent consideration qwik'
 }
