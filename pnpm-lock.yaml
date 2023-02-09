@@ -12,6 +12,7 @@ specifiers:
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': ^0.5.9
   '@types/node': ^18.11.19
+  '@types/three': ^0.149.0
   '@vueuse/core': ^9.12.0
   '@vueuse/nuxt': ^9.12.0
   autoprefixer: ^10.4.13
@@ -24,6 +25,7 @@ specifiers:
   pinia: ^2.0.30
   postcss: ^8.4.21
   tailwindcss: ^3.2.4
+  three: ^0.149.0
   typescript: ^4.9.5
 
 devDependencies:
@@ -38,6 +40,7 @@ devDependencies:
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.4
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   '@types/node': 18.13.0
+  '@types/three': 0.149.0
   '@vueuse/core': 9.12.0
   '@vueuse/nuxt': 9.12.0_nuxt@3.1.2
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -50,6 +53,7 @@ devDependencies:
   pinia: 2.0.30_typescript@4.9.5
   postcss: 8.4.21
   tailwindcss: 3.2.4_postcss@8.4.21
+  three: 0.149.0
   typescript: 4.9.5
 
 packages:
@@ -1929,12 +1933,22 @@ packages:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: true
 
+  /@types/three/0.149.0:
+    resolution: {integrity: sha512-fgNBm9LWc65ER/W0cvoXdC0iMy7Ke9e2CONmEr6Jt8sDSY3sw4DgOubZfmdZ747dkPhbQrgRQAWwDEr2S/7IEg==}
+    dependencies:
+      '@types/webxr': 0.5.1
+    dev: true
+
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
   /@types/web-bluetooth/0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
+    dev: true
+
+  /@types/webxr/0.5.1:
+    resolution: {integrity: sha512-xlFXPfgJR5vIuDefhaHuUM9uUgvPaXB6GKdXy2gdEh8gBWQZ2ul24AJz3foUd8NNKlSTQuWYJpCb1/pL81m1KQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.51.0_b635kmla6dsb4frxfihkw4m47e:
@@ -8111,6 +8125,10 @@ packages:
 
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
+    dev: true
+
+  /three/0.149.0:
+    resolution: {integrity: sha512-tohpUxPDht0qExRLDTM8sjRLc5d9STURNrdnK3w9A+V4pxaTBfKWWT/IqtiLfg23Vfc3Z+ImNfvRw1/0CtxrkQ==}
     dev: true
 
   /through/2.3.8:

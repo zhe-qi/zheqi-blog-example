@@ -36,6 +36,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'zh'
+      },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         // 引入英特尔字体,使用预加载

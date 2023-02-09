@@ -22,19 +22,6 @@ const headerList = [
   }
 ]
 
-const handlerToPath = (path: string) => {
-  switch (path) {
-    case '/home':
-      navigateTo(path)
-      break
-    case '/project':
-      navigateTo(path)
-      break
-    default:
-      break
-  }
-}
-
 const handlerReload = () => {
   location.reload()
 }
@@ -75,6 +62,7 @@ const navList = [
 
 const toPath = (path: string) => {
   navigateTo(path)
+  isOpen.value = false
 }
 const target = ref<HTMLElement | null>(null)
 const isOpen = ref(false)
@@ -84,7 +72,7 @@ onClickOutside(target, () => {
 </script>
 
 <template>
-  <div class="fixed z-20 w-screen h-16 px-3 border-b-2 md:pr-10 border-slate-200 backdrop-blur-md">
+  <div class="fixed z-20 w-screen h-16 px-3 border-b md:pr-10 border-slate-200 backdrop-blur-md">
     <div class="flex items-center w-full h-full">
       <div v-show="isMobile" class="flex items-center justify-between w-full">
         <div ref="target" class="relative flex items-center space-x-4">
@@ -124,7 +112,7 @@ onClickOutside(target, () => {
         </div>
         <div class="flex items-center justify-center space-x-2 text-sm md:space-x-4 md:text-base">
           <div class="w-[2px] h-8 rounded-sm bg-zinc-300 md:hidden block" />
-          <div v-for="item in headerList" :key="item.name" class="overflow-hidden cursor-pointer whitespace-nowrap text-ellipsis hover:text-blue-200" @click="handlerToPath(item.path)">
+          <div v-for="item in headerList" :key="item.name" class="overflow-hidden cursor-pointer whitespace-nowrap text-ellipsis hover:text-blue-200" @click="toPath(item.path)">
             {{ $t(item.name) }}
           </div>
           <div class="w-[2px] h-8 rounded-sm bg-zinc-300" />

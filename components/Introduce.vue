@@ -7,8 +7,8 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex justify-around w-full h-full p-2 border">
-    <div class="overflow-hidden prose rounded lg:prose-xs dark:text-white whitespace-nowrap text-ellipsis">
+  <div class="flex justify-between w-full h-full p-2 border">
+    <div class="w-4/6 overflow-hidden prose rounded lg:prose-xs dark:text-white whitespace-nowrap text-ellipsis">
       {{ $t('网名') }}: <span class="rainbow-text">{{ $t('折七') }}</span>
       <br>
       {{ $t('年龄') }}: <span class="text-red-400">20</span>
@@ -32,10 +32,10 @@ defineProps<{
       </NuxtLink>
     </div>
     <NuxtLink
-      class="block text-center w-[25%]"
+      class="block w-20 h-20 text-center"
       href="https://github.com/zhe-qi"
     >
-      <nuxt-img loading="lazy" src="/images/nahida.jpg" alt="zhe-qi" class="w-20 rounded-full" />
+      <nuxt-img loading="lazy" src="/images/nahida.jpg" alt="zhe-qi" class="w-full h-full rounded-full" />
       <p class="dark:text-white">
         <!-- {{ user.zheqi }}  这种方式需要用户可以访问github -->
         zhe-qi
