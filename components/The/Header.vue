@@ -89,7 +89,7 @@ onClickOutside(target, () => {
       <div v-show="isMobile" class="flex items-center justify-between w-full">
         <div ref="target" class="relative flex items-center space-x-4">
           <Icon name="material-symbols:menu" class="text-2xl" @click="isOpen = !isOpen" />
-          <ul v-if="isOpen" class="absolute top-[100%] right-0 w-20 space-y-2 rounded bg-cyan-50" @focusout="isOpen = false">
+          <ul v-if="isOpen" class="absolute top-[100%] right-0 w-20 space-y-2 rounded dark:bg-zinc-900 bg-cyan-50" @focusout="isOpen = false">
             <li v-for="item in navList" :key="item.name" class="text-center border rounded" @click="toPath(item.path)">
               {{ item.name }}
             </li>

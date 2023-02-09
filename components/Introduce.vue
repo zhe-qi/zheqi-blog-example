@@ -35,9 +35,10 @@ defineProps<{
       class="block text-center w-[25%]"
       href="https://github.com/zhe-qi"
     >
-      <nuxt-img loading="lazy" :src="user.avatar_url" alt="zhe-qi" class="w-20 rounded-full" />
+      <nuxt-img loading="lazy" src="/images/nahida.jpg" alt="zhe-qi" class="w-20 rounded-full" />
       <p class="dark:text-white">
-        {{ user.name }}
+        <!-- {{ user.zheqi }}  这种方式需要用户可以访问github -->
+        zhe-qi
       </p>
     </NuxtLink>
   </div>
