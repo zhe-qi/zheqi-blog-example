@@ -66,9 +66,9 @@ const step: {
 <template>
   <div class="box-border w-full h-full px-[10%]">
     <section
-      class="flex box-border text-zinc-700 dark:text-zinc-200 items-center justify-between w-full md:my-20 pl-[7%] pr-[10%] h-[30vh]"
+      class="flex box-border text-zinc-700 dark:text-zinc-200 items-center justify-between w-full md:my-20 px-[10%] h-[30vh]"
     >
-      <div class="md:w-[30vw] box-border md:h-[30vh] w-[60vw] flex flex-col justify-between h-[20vh] rainbow-text">
+      <div class="md:w-[30vw] mt-10 box-border md:h-[30vh] w-[60vw] flex flex-col justify-between h-[20vh] rainbow-text">
         <div class="text-3xl md:mt-10 w-full leading-[4rem] h-16 font-bold md:text-[5rem] text-ellipsis whitespace-nowrap overflow-hidden">
           {{ $t('zheqi-blog') }}
         </div>
