@@ -68,15 +68,17 @@ const step: {
     <section
       class="flex box-border text-zinc-700 dark:text-zinc-200 items-center justify-between w-full md:my-20 px-[10%] h-[30vh]"
     >
-      <div class="md:w-[30vw] mt-10 box-border md:h-[30vh] w-[60vw] flex flex-col justify-between h-[20vh] rainbow-text">
-        <div class="text-3xl md:mt-10 w-full leading-[4rem] h-16 font-bold md:text-[5rem] text-ellipsis whitespace-nowrap overflow-hidden">
-          {{ $t('zheqi-blog') }}
-        </div>
-        <div class="w-[23vw] h-10 mt-2 box-border text-xl font-semibold leading-10 md:mt-5 md:ml-[2em] ml-4 md:text-4xl whitespace-nowrap text-ellipsis overflow-hidden">
-          {{ $t('下一代博客模板') }}
+      <div class="md:w-[30vw] mb-2 box-border h-full w-[60vw] flex flex-col justify-between rainbow-text">
+        <div class="flex flex-col items-center justify-center h-full">
+          <div class="text-3xl w-full leading-[4rem] font-bold md:text-[5rem] text-ellipsis whitespace-nowrap overflow-hidden">
+            {{ $t('zheqi-blog') }}
+          </div>
+          <div class="w-[23vw] mt-2 box-border text-xl font-semibold leading-10 md:mt-5 md:ml-[2em] ml-4 md:text-4xl whitespace-nowrap text-ellipsis overflow-hidden">
+            {{ $t('下一代博客模板') }}
+          </div>
         </div>
         <div
-          class="flex items-center justify-center space-x-8 text-base font-normal leading-7 text-center text-gray-600 md:leading-10 mt-7 dark:text-zinc-200 md:mt-12"
+          class="flex items-center justify-center space-x-8 text-base font-normal leading-7 text-center text-gray-600 md:leading-10 dark:text-zinc-200"
         >
           <NuxtLink
             to="/home"
