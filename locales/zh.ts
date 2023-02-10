@@ -52,5 +52,11 @@ export const zh = {
   '在线答题题库系统后端Nestjs+Prisma': '在线答题题库系统后端Nestjs+Prisma',
   在线答题题库系统前端: '在线答题题库系统前端',
   '在线答题题库系统ppt Slidev': '在线答题题库系统ppt Slidev',
-  '新版博客nuxt3，后续考虑qwik': '新版博客nuxt3，后续考虑qwik'
+  '新版博客nuxt3，后续考虑qwik': '新版博客nuxt3，后续考虑qwik',
+  'tailwindcss is a utility-first CSS framework for rapidly building custom designs.': 'tailwindcss是一个实用优先的CSS框架，用于快速构建自定义设计。',
+  'vue is a progressive framework for building user interfaces.': 'vue是一个用于构建用户界面的渐进式框架。',
+  'typescript is a typed superset of javascript that compiles to plain javascript.': 'typescript是javascript的类型超集，可编译为纯javascript。',
+  'nuxt is a framework for creating universal vue.js applications.': 'nuxt是用于创建通用vue.js应用程序的框架。',
+  'bun is a javascript runtime.': 'bun是一个javascript运行时。',
+  'vite is the next generation of front-end packaging build tools.': 'vite是下一代前端打包构建工具。'
 }

@@ -54,5 +54,12 @@ export const en = {
   '在线答题题库系统后端Nestjs+Prisma': 'Online answer bank system backend Nestjs+Prisma',
   在线答题题库系统前端: 'Online answer bank system front end',
   '在线答题题库系统ppt Slidev': 'Online answer bank system ppt Slidev',
-  '新版博客nuxt3，后续考虑qwik': 'New blog nuxt3, subsequent consideration qwik'
+  '新版博客nuxt3，后续考虑qwik': 'New blog nuxt3, subsequent consideration qwik',
+  'tailwindcss is a utility-first CSS framework for rapidly building custom designs.': 'tailwindcss is a utility-first CSS framework for rapidly building custom designs.',
+  'vue is a progressive framework for building user interfaces.': 'vue is a progressive framework for building user interfaces.',
+  'typescript is a typed superset of javascript that compiles to plain javascript.': 'typescript is a typed superset of javascript that compiles to plain javascript.',
+  'nuxt is a framework for creating universal vue.js applications.': 'nuxt is a framework for creating universal vue.js applications.',
+  'bun is a javascript runtime.': 'bun is a javascript runtime.',
+  'vite is the next generation of front-end packaging build tools.': 'vite is the next generation of front-end packaging build tools.'
+
 }

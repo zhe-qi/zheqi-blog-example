@@ -22,7 +22,7 @@ defineProps<{
       🌈{{ $t('喜欢') }}<span class="text-emerald-400">{{ $t('主流前沿技术') }}</span>
       {{ $t('，喜欢游戏、小说、音乐') }}
       <br>
-      🌠{{ $t('写这个网站的第') }}<span class="text-orange-400">{{ 2 }}</span>{{ $t('天') }}🌟({{ $t('不连续') }})
+      🌠{{ $t('写这个网站的第') }}<span class="text-orange-400">{{ 3 }}</span>{{ $t('天') }}🌟({{ $t('不连续') }})
       <br>
       <NuxtLink
         class="cursor-pointer a"
