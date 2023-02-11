@@ -138,7 +138,7 @@ const changeLocales = () => {
             {{ $t(item.name) }}
           </div>
           <div class="w-[2px] h-8 rounded-sm bg-zinc-300" />
-          <HeaderIconI18n />
+          <HeaderIconI18n :is-icon="true" />
           <HeaderIconSwitch />
           <Icon name="carbon:logo-github" class="text-3xl cursor-pointer" @click="toGithub" />
         </div>
