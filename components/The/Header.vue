@@ -69,6 +69,25 @@ const isOpen = ref(false)
 onClickOutside(target, () => {
   isOpen.value = false
 })
+
+const { locale } = useI18n()
+
+const current = ref<string>('简体中文')
+const idx = ref(1)
+const availableLocales = [
+  { code: 'en', name: 'English' },
+  { code: 'zh', name: '简体中文' }
+]
+
+const changeLocales = () => {
+  idx.value++
+  if (idx.value >= availableLocales.length) {
+    idx.value = 0
+  }
+  locale.value = availableLocales[idx.value].code
+  current.value = availableLocales[idx.value].name
+}
+
 </script>
 
 <template>
@@ -82,6 +101,9 @@ onClickOutside(target, () => {
             <li v-for="item in navList" :key="item.name" class="text-center border rounded" @click="toPath(item.path)">
               {{ item.name }}
             </li>
+            <li class="overflow-hidden border rounded whitespace-nowrap text-ellipsis" @click.stop="changeLocales()">
+              {{ current }}
+            </li>
           </ul>
           <NuxtLink to="/" title="首页" class="overflow-hidden text-xl font-bold whitespace-nowrap text-ellipsis lg:text-4xl">
             <div class="rainbow-text dark:text-gray-200">
@@ -90,7 +112,6 @@ onClickOutside(target, () => {
           </NuxtLink>
         </div>
         <div class="flex items-center space-x-4">
-          <HeaderIconI18n />
           <HeaderIconSwitch />
           <Icon name="carbon:logo-github" class="text-3xl cursor-pointer" @click="toGithub" />
         </div>

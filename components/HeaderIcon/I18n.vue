@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 
+defineProps<{
+  isIcon?: boolean
+}>()
+
 const { locale } = useI18n()
 
 const current = ref<string>('简体中文')
@@ -20,7 +24,7 @@ const switchLocalePath = (code: string, name: string) => {
   <Menu as="div" class="relative inline-block text-left">
     <div>
       <MenuButton class="flex items-center justify-center space-x-2">
-        <Icon name="uil:english-to-chinese" class="text-xl" />
+        <Icon v-show="isIcon" name="uil:english-to-chinese" class="text-xl" />
         <span>{{ current }}</span>
       </MenuButton>
     </div>
