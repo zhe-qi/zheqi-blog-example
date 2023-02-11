@@ -82,13 +82,13 @@ const step: {
         >
           <NuxtLink
             to="/home"
-            class="block w-16 overflow-hidden border rounded-md md:h-10 h-7 text-ellipsis whitespace-nowrap dark:hover:bg-zinc-700 hover:bg-cyan-50 border-zinc-400 dark:border-zinc-200 md:w-28"
+            class="block h-10 overflow-hidden leading-10 border rounded-md w-28 md:h-10 text-ellipsis whitespace-nowrap dark:hover:bg-zinc-700 hover:bg-cyan-50 border-zinc-400 dark:border-zinc-200 md:w-28"
           >
             {{ $t('开始使用') }}
           </NuxtLink>
           <NuxtLink
             to="https://github.com/zhe-qi/zheqi-blog"
-            class="block w-16 overflow-hidden border border-gray-300 rounded-md md:h-10 h-7 dark:hover:bg-zinc-800 hover:bg-blue-50 text-ellipsis whitespace-nowrap md:w-28 dark:border-zinc-200"
+            class="block h-10 overflow-hidden leading-10 text-center border border-gray-300 rounded-md w-28 md:h-10 dark:hover:bg-zinc-800 hover:bg-blue-50 text-ellipsis whitespace-nowrap md:w-28 dark:border-zinc-200"
           >
             {{ $t('了解更多') }}
             <Icon name="material-symbols:chevron-right" class="mb-1 text-2xl" />
