@@ -70,10 +70,10 @@ const step: {
     >
       <div class="md:w-[30vw] mb-2 box-border h-full w-[60vw] flex flex-col justify-between rainbow-text">
         <div class="flex flex-col items-center justify-center h-full">
-          <div class="text-3xl w-full text-center leading-[4rem] font-bold md:text-[5rem] text-ellipsis whitespace-nowrap overflow-hidden">
+          <div class="text-3xl w-full text-center leading-[4rem] font-bold md:text-[3rem] lg:text-[5rem] text-ellipsis whitespace-nowrap overflow-hidden">
             {{ $t('zheqi-blog') }}
           </div>
-          <div class="w-[23vw] mt-2 box-border text-xl font-semibold leading-10 md:mt-5 md:ml-[2em] ml-4 md:text-4xl whitespace-nowrap text-ellipsis overflow-hidden">
+          <div class="sm:w-[23vw] w-36 mt-2 box-border text-xl font-semibold leading-10 md:mt-5 md:ml-[2em] ml-4 md:text-2xl lg:text-4xl whitespace-nowrap text-ellipsis overflow-hidden">
             {{ $t('下一代博客模板') }}
           </div>
         </div>
