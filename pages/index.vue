@@ -66,7 +66,7 @@ const step: {
 <template>
   <div class="box-border w-full h-full px-[10%]">
     <section
-      class="flex box-border text-zinc-700 dark:text-zinc-200 items-center flex-col-reverse md:flex-row justify-between w-full md:my-20 px-[10%] sm:h-[30vh] h-[50vh]"
+      class="flex box-border text-zinc-700 dark:text-zinc-200 items-center flex-col-reverse md:flex-row justify-between w-full md:my-20 px-[10%] sm:h-[30vh] h-72"
     >
       <div class="md:w-[30vw] mb-2 box-border h-full w-[60vw] flex flex-col justify-between rainbow-text">
         <div class="flex flex-col items-center justify-center h-full">
