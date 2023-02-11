@@ -96,8 +96,9 @@ useHead({
                 class="transition-all border rounded-md animate-shadow-drop-center dark:hover:text-zinc-900 hover:bg-zinc-400 hover:cursor-pointer"
               >
                 <nuxt-img
+                  quality="80"
+                  format="webp"
                   preset="image"
-                  loading="lazy"
                   :src="p.image"
                   :alt="p.title"
                   class="dark:brightness-50 w-full h-[300px] object-contain object-center rounded-lg"

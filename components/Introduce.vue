@@ -35,7 +35,7 @@ defineProps<{
       class="block w-20 h-20 text-center"
       href="https://github.com/zhe-qi"
     >
-      <nuxt-img loading="lazy" src="/images/nahida.jpg" alt="zhe-qi" class="w-full h-full rounded-full" />
+      <nuxt-img format="webp" src="/images/nahida.jpg" alt="zhe-qi" class="w-full h-full rounded-full" />
       <p class="dark:text-white">
         <!-- {{ user.zheqi }}  这种方式需要用户可以访问github -->
         zhe-qi

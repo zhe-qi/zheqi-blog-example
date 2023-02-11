@@ -126,8 +126,9 @@ for (let i = 2, len = 12; i < len; i++) {
             class="overflow-hidden rounded cursor-pointer w-50 h-30 "
           >
             <nuxt-img
+              format="webp"
+              quality="60"
               preset="image"
-              loading="lazy"
               class="object-cover w-full h-full transition-all border hover:scale-150"
               :src="item"
               alt="zheqi-blog"
@@ -156,7 +157,7 @@ for (let i = 2, len = 12; i < len; i++) {
             }"
           >
             <SwiperSlide v-for="slide in imgs" :key="slide.title">
-              <nuxt-img preset="image" loading="lazy" :src="slide.url" alt="slide.title" class="object-cover w-full h-full dark:brightness-75" />
+              <nuxt-img format="webp" quality="80" preset="image" :src="slide.url" alt="slide.title" class="object-cover w-full h-full dark:brightness-75" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -199,7 +200,7 @@ for (let i = 2, len = 12; i < len; i++) {
                   class="flex h-20 p-2 m-2 border"
                   :to="'/blog' + item.data._path"
                 >
-                  <nuxt-img preset="image" loading="lazy" class="object-cover h-full w-28" :src="item.data.img" alt="" />
+                  <nuxt-img format="webp" quality="50" preset="image" class="object-cover h-full w-28" :src="item.data.img" alt="" />
                   <div class="ml-2">
                     title:
                     <span class="rainbow-text">{{ $t(item.data.title) }}</span>
@@ -229,7 +230,7 @@ for (let i = 2, len = 12; i < len; i++) {
               <ul class="w-full h-full">
                 <li v-for="item in utils" :key="item.id" class="w-full h-32 p-2 border rounded">
                   <NuxtLink class="flex w-full h-full overflow-auto" target="_blank" :to="item.url">
-                    <nuxt-img preset="image" loading="lazy" class="w-40 bg-center bg-cover h-30" :src="item.img" alt="" />
+                    <nuxt-img preset="image" quality="60" format="webp" class="w-40 bg-center bg-cover h-30" :src="item.img" alt="" />
                     <div class="prose w-[60%] ml-2">
                       <h4 class="text-center dark:text-red-50">
                         {{ item.title }}

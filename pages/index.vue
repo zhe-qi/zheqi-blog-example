@@ -150,6 +150,7 @@ const step: {
             </div>
           </div>
           <nuxt-img
+            format="webp"
             class="object-cover object-center mt-12 rounded-lg dark:contrast-50 lg:w-3/5 md:w-1/2 md:mt-0"
             alt="妮露"
             src="/images/nilu.jpg"
